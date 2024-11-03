@@ -4,8 +4,7 @@
   "description": "Let’s Go Rideshare LLC",
   "main": "index.js",
   "scripts": {
-    "test": "jest" // Replace with your actual test command
-  },
+    "test": "jest" // Replace with your actual test command},
   "author": "Don Badsha",
   "license": "ISC"
 }
