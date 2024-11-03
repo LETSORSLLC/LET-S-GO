@@ -1,10 +1,10 @@
 {
-  "name": "let-s-go",
+  "name": "let's-go",
   "version": "1.0.0",
   "description": "Let’s Go Rideshare LLC",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "author": "Don Badsha",
   "license": "ISC"
