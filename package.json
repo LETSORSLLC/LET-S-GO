@@ -3,11 +3,8 @@
   "version": "1.0.0",
   "description": "Let’s Go Rideshare LLC",
   "main": "index.js",
-  "scripts": {{
   "scripts": {
-    "test": "jest" // or any other test command you are using
-  
-    "test": "your-test-command"
+    "test": "jest" // Replace with your actual test command
   },
   "author": "Don Badsha",
   "license": "ISC"
