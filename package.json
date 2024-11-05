@@ -1,0 +1,12 @@
+{
+  "name": "let-s-go",
+  "version": "1.0.0",
+  "description": "Innovative Rideshare Solutions\r Let’s Go Rideshare LLC was founded by Don Badsha, who spent several years driving for Uber and Lyft. His experiences revealed major gaps in the rideshare industry, particularly in safety, ride consistency, and driver satisfaction. These challenges inspired him to create Let’s Go Rideshare, a platform designed to address these issues head-on while providing a better experience for both riders and drivers.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
