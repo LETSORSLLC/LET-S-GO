@@ -4,7 +4,11 @@
   "description": "Let’s Go Rideshare LLC",
   "main": "index.js",
   "scripts": {
-    "test": "jest"},
+    "test": "jest"
+  },
   "author": "Don Badsha",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^27.0.0"
+  }
 }
