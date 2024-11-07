@@ -10,7 +10,11 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ${{ matrix.os }}
+
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest]
 
     steps:
     - name: Checkout code
@@ -22,6 +26,7 @@ jobs:
         java-version: '11'
 
     - name: Build with Gradle
-      run: ./gradlew build
-          - name: Run tests
-      run: ./gradlew test
+      run: ${{ matrix.os == 'windows-latest' && 'gradlew.bat' || './gradlew' }} build
+
+    - name: Run tests
+      run: ${{ matrix.os == 'windows-latest' && 'gradlew.bat' || './gradlew' }} test
