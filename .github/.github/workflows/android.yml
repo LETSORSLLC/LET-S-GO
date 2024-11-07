@@ -26,7 +26,7 @@ jobs:
         java-version: '11'
 
     - name: Build with Gradle
-      run: ${{ matrix.os == 'windows-latest' && 'gradlew.bat' || './gradlew' }} build
+      run: ${{ matrix.os == 'windows-latest' && 'gradlew.bat' || './gradlew' }} -p .github/.github/workflows/.github/.github/workflows build
 
     - name: Run tests
-      run: ${{ matrix.os == 'windows-latest' && 'gradlew.bat' || './gradlew' }} test
+      run: ${{ matrix.os == 'windows-latest' && 'gradlew.bat' || './gradlew' }} -p .github/.github/workflows/.github/.github/workflows test
