@@ -10,11 +10,7 @@ on:
 
 jobs:
   build:
-    runs-on: ${{ matrix.os }}
-
-    strategy:
-      matrix:
-        os: [ubuntu-latest, windows-latest]
+    runs-on: ubuntu-latest
 
     steps:
     - name: Checkout code
@@ -26,7 +22,16 @@ jobs:
         java-version: '11'
 
     - name: Build with Gradle
-      run: ${{ matrix.os == 'windows-latest' && 'gradlew.bat' || './gradlew' }} -p .github/.github/workflows/.github/.github/workflows build
+      run: ./gradlew build
 
-    - name: Run tests
-      run: ${{ matrix.os == 'windows-latest' && 'gradlew.bat' || './gradlew' }} -p .github/.github/workflows/.github/.github/workflows test
+    - name: Upload APK
+      uses: actions/upload-artifact@v2
+      with:
+        name: apk
+        path: app/build/outputs/apk/**/*.apk
+
+    - name: Upload AAB
+      uses: actions/upload-artifact@v2
+      with:
+        name: app-bundle
+        path: app/build/outputs/bundle/**/*.aab
