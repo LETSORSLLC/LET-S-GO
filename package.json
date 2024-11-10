@@ -1,0 +1,11 @@
+{
+  "name": "your-project-name",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "jest"
+  },
+  "dependencies": {
+    "supertest": "^6.1.3",
+    "node-mocks-http": "^1.11.0"
+  }
+}

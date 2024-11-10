@@ -1,0 +1,6 @@
+const { exampleUtilFunction } = require('./exampleUtil');
+
+test('exampleUtilFunction should return the correct result', () => {
+    const result = exampleUtilFunction();
+    expect(result).toBe('Utility function result');
+});
