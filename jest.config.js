@@ -2,6 +2,6 @@
 module.exports = {
   testEnvironment: 'node',
   testEnvironmentOptions: {
-    // your options here
+    customExportConditions: ["node", "node-addons"],
   },
 };
