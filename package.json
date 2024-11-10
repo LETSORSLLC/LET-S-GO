@@ -9,6 +9,7 @@
   "author": "Don Badsha",
   "license": "ISC",
   "devDependencies": {
-    "jest": "^27.0.0"
+    "jest": "^27.0.0",
+    "@react-native-community/cli": "latest"
   }
 }
