@@ -11,3 +11,11 @@ Let’s Go Rideshare LLC was founded by Don Badsha, who spent several years driv
 
 - **Real-Time Trip Monitoring**
   Maintains consistent ride quality by monitoring trips in real time and conducting thorough vehicle inspections. This ensures all cars meet high standards of cleanliness, safety, and comfort.
+  
+## Environment Variables Setup
+
+To securely store and use credentials, set the following environment variables in your GitHub repository settings:
+
+- `APP_STORE_CONNECT_API_KEY`: Your App Store Connect API key.
+
+You can set these secrets in your repository by navigating to **Settings > Secrets and variables > Actions** and adding new repository secrets.
