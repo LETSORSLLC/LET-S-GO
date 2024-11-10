@@ -1,18 +1,46 @@
-1. **Update package.json:**
-   Ensure that your package.json file includes the test script:
-   json
-   {
-     "scripts": {
-       "test": "jest"
-     }
-   }
-   
+name: Build and Test
 
-2. *Commit and Push Changes:*
-   sh
-   git add package.json
-   git commit -m "Install jest and update test script"
-   git push origin main
-   
+on: [push, pull_request]
 
-3. *Re-run the Workflow:*
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        language: [node, ruby]
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Setup Node.js
+      if: matrix.language == 'node'
+      uses: actions/setup-node@v2
+      with:
+        node-version: '14'
+    
+    - name: Install Node.js dependencies
+      if: matrix.language == 'node'
+      run: npm install
+
+    - name: Run Node.js tests
+      if: matrix.language == 'node'
+      run: npm test
+
+    - name: Setup Ruby
+      if: matrix.language == 'ruby'
+      uses: actions/setup-ruby@v1
+      with:
+        ruby-version: '2.7'
+
+    - name: Install Ruby dependencies
+      if: matrix.language == 'ruby'
+      run: bundle install
+
+    - name: Run Ruby tests
+      if: matrix.language == 'ruby'
+      run: bundle exec rspec
+        
+    - name: Set build mode
+      run: echo "build-mode: autobuild"
