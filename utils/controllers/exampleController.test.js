@@ -1,11 +1,9 @@
-const { exampleFunction } = require('./exampleController.js');
+const { exampleFunction } = require('../controllers/exampleController');
 const httpMocks = require('node-mocks-http');
 
 test('exampleFunction should send "Hello, world!"', () => {
-    const req = httpMocks.createRequest();
-    const res = httpMocks.createResponse();
-
-    exampleFunction(req, res);
-
-    expect(res._getData()).toBe('Hello, world!');
+  const req = httpMocks.createRequest();
+  const res = httpMocks.createResponse();
+  exampleFunction(req, res);
+  expect(res._getData()).toBe("Hello, world!");
 });
