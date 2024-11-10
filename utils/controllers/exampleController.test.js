@@ -1,4 +1,4 @@
-const { exampleFunction } = require('../controllers/exampleController');
+const { exampleFunction } = require('../controllers/exampleController.js');
 const httpMocks = require('node-mocks-http');
 
 test('exampleFunction should send "Hello, world!"', () => {
