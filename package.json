@@ -3,11 +3,11 @@
   "version": "1.0.0",
   "scripts": {
     "test": "jest"
-  },
-  "dependencies": {
-    // your dependencies here
+ {
+  "scripts": {
+    "test": "jest"
   },
   "devDependencies": {
-    "jest": "^27.0.0"  // Ensure you have Jest installed
+    "jest": "^27.0.0"
   }
 }
