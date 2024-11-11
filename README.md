@@ -19,3 +19,4 @@ To securely store and use credentials, set the following environment variables i
 - `APP_STORE_CONNECT_API_KEY`: Your App Store Connect API key.
 
 You can set these secrets in your repository by navigating to **Settings > Secrets and variables > Actions** and adding new repository secrets.
+# Update to trigger workflow
