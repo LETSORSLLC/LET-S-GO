@@ -1,6 +1,6 @@
-# Let’s Go Rideshare LLC
+# Let's Go
 
-Let’s Go Rideshare LLC was founded by Don B., who spent several years driving for Uber and Lyft. His experiences revealed major gaps in the rideshare industry, particularly in safety, ride consistency, and driver satisfaction.
+Let's Go was founded by Don B., who spent several years driving for Uber and Lyft. His experiences revealed major gaps in the rideshare industry, particularly in safety, ride consistency, and driver satisfaction.
 
 ## Features
 
