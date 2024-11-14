@@ -13,6 +13,27 @@ Let’s Go Rideshare LLC was founded by Don B., who spent several years driving 
 - **Real-Time Trip Monitoring**
   Maintains consistent ride quality by monitoring trips in real time and conducting thorough vehicle inspections. This ensures all cars meet high standards of cleanliness, safety, and comfort.
 
+- **Passenger Can Choose Nearby Driver**
+  A passenger can choose a nearby driver on the app, but the driver cannot see the passenger.
+
+- **Pick-Up Threshold and Additional Fees**
+  Drivers have a threshold of 5 miles for pick up. If the passenger is farther away, the driver will receive an additional fee for the extra miles.
+
+- **Pickup and Dropoff Visibility**
+  Drivers are able to see the pickup point and dropoff point while accepting the trip.
+
+- **Miles Data Tracking**
+  Drivers get the miles data from where they start accepting the trip until the end where they drop the passenger.
+
+- **Non-Discriminatory Ride Assignment**
+  There is no discrimination in providing rides. All drivers should get rides evenly.
+
+- **New York and New Jersey Driver Trips**
+  New York drivers in New Jersey should get the New York trip from New Jersey, and if New York drivers are not available, the trip can go to New Jersey drivers followed by compensation for tolls.
+
+- **No Surge Pricing**
+  There will be no surge pricing at any time.
+
 ## Installation Instructions
 
 ### iOS
