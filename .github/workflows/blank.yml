@@ -34,6 +34,10 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+      - name: Install CodeQL
+        run: |
+          sudo apt-get update
+          sudo apt-get install codeql
       - name: Initialize CodeQL for JavaScript
         run: |
           codeql database init --force-overwrite --db-cluster /home/runner/work/_temp/codeql_databases --source-root=/home/runner/work/LET-S-GO --extractor-include-aliases --language=javascript --codescanning-config=/home/runner/work/_temp/user-config.yaml --build-mode=none --calculate-language-specific-baseline --sublanguage-file-coverage
