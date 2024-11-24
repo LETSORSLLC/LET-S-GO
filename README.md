@@ -1,5 +1,3 @@
-Here is the extended description you provided:
-
 "Innovative Rideshare Solutions
 Let’s Go Rideshare LLC was founded by Don B., who spent several years driving for Uber and Lyft. His experiences revealed major gaps in the rideshare industry, particularly in safety, ride consistency, and driver satisfaction. These challenges inspired him to create Let’s Go Rideshare, a platform designed to address these issues head-on while providing a better experience for both riders and drivers.
 
